@@ -1,4 +1,8 @@
-from mods import townOfUs
+from mods import TownOfUs
 import check
 
-check.check_amongus_exe("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Among Us")
+path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Among Us\\"
+
+if check.check_amongus_exe(path):
+    town = TownOfUs.TownOfUs(path)
+    town.run()
