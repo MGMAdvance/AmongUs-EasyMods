@@ -39,5 +39,4 @@ class TownOfUs:
         self.download()
         self.extract_zip()
         self.clean_up()
-        
         print("Town of Us installed!")
